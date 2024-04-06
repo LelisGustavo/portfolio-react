@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: Montserrat-Light, Montserrat-Regular, Montserrat-Medium, Montserrat-Bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+/* Instalação de Fonts */
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(./fonts/montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(./fonts/montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(./fonts/montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(./fonts/montserrat/Montserrat-Bold.ttf);
+}

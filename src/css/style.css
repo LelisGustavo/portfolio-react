@@ -1,0 +1,831 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+/* Formatação por TAG's */
+.html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    padding: 0.6rem 0rem;
+    margin: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60%;
+    width: 90%;
+    margin: auto;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: Montserrat-Regular;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}
+
+header nav ul li a:hover {
+    color: #0B8CBE;
+}
+
+header nav ul li a {
+    position: relative;
+    animation-name: menu;
+    animation-duration: 1s;
+    transition: 100ms;
+}
+
+header nav ul li a .FiLogOut {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+/* Formatação por ID's */
+.homePage {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background-color: #0B8CBE;
+    color: #ffffff;
+    font-family: Montserrat-Regular;
+}
+
+.top {
+    background-color: #ffffff;
+}
+
+.page {
+    padding-top: 2rem;
+    background-color: #000000;
+}
+
+.endPage {
+    padding: 2rem 0rem;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* Formatação por Class's */
+
+/* Botão de navegação */
+.btnNav {
+    margin: 0rem 0.4rem 0.4rem 0rem;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.btnNavTopo {
+    width: 60px;
+    transition: .4s;
+}
+
+.btnNavTopo:hover {
+    transform: scale(1.1);
+}
+
+/* Banner */
+.titleBanner {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.textBanner {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconeAt {
+    font-size: 4.2rem;
+    color: #0B8CBE;
+}
+
+.iconeAt:hover {
+    color: #ffffff;
+    cursor: default;
+}
+
+.nome {
+    font-size: 4.2rem;
+}
+
+.nome:hover {
+    color: #0B8CBE;
+    cursor: default;
+}
+
+.funcao {
+    font-size: 2rem;
+}
+
+.funcao:hover {
+    color: #0B8CBE;
+    cursor: default;
+}
+
+.descricao {
+    font-size: 1.2rem;
+}
+
+.descricao:hover {
+    color: #0B8CBE;
+    cursor: default;
+}
+
+.btnPortfolio {
+    display: flex;
+    gap: 1rem;
+}
+
+.GitHub {
+    width: 100%;
+    max-width: 90px;
+}
+
+.Linkedin {
+    width: 100%;
+    max-width: 90px;
+}
+
+.imgBanner:hover {
+    transform: scale(1.1);
+}
+
+/* Quem sou */
+.about {
+    padding: 2.4rem 0.8rem;
+    background-color: #0B8CBE;
+    color: #ffffff;
+    text-align: center;
+    cursor: default;
+}
+
+.titleAbout {
+    font-family: Montserrat-Medium;
+    font-size: 2.4rem;
+    cursor: default;
+}
+
+.boxHabil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.habil {
+    padding: 8px;
+    gap: 3rem;
+    font-size: 12px;
+    border: 0.1px #000000 solid;
+    border-radius: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: default;
+}
+
+.habil:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 0.1px #ffffff solid;
+    font-weight: 500;
+    transition: 1s;
+}
+
+/* Portfólio */
+.projects {
+    text-align: center;
+    color: #ffffff;
+}
+
+.titleProjects {
+    font-family: Montserrat-Regular;
+    font-size: 1rem;
+    cursor: default;
+}
+
+.textProjects {
+    padding: 0rem 0.6rem;
+}
+
+.imgCard:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 2px 2px #000000;
+}
+
+.imgGitHub {
+    width: 30px;
+}
+
+/* Contato */
+.contact {
+    background-color: #0B8CBE;
+    color: #ffffff;
+    text-align: center;
+}
+
+.infoCt {
+    cursor: default;
+}
+
+.listCtc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.4rem;
+}
+
+.iconCtc {
+    width: 45px;
+    height: 45px;
+    margin-right: 1.6rem;
+    transition: .4s;
+}
+
+.iconCtc:hover {
+    transform: scale(1.1);
+}
+
+.boxWhatsApp {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.linkWhatsApp {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.linkWhatsApp:hover {
+    font-weight: bolder;
+    color: #055305;
+    background-color: #ffffff;
+    padding: 0.4rem;
+    border-radius: 4px;
+}
+
+.infoWhatsApp {
+    margin-top: 8px;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.formContact {
+    text-align: left;
+}
+
+.campForm {
+    width: 100%;
+    height: 32px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding-left: 4px;
+    margin-bottom: 10px;
+    font-family: Montserrat-Regular;
+    font-size: 0.8rem;
+}
+
+.campFormMsg {
+    width: 100%;
+    height: 100px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding-left: 4px;
+    margin-bottom: 10px;
+    font-family: Montserrat-Regular;
+    font-size: 0.8rem;
+}
+
+.campForm:focus, .campFormMsg:focus {
+    border: 2px solid #42C6FA;
+}
+
+.btnForm {
+    width: 80px;
+    height: 35px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s;
+    margin-right: 5px;
+}
+
+.btnFormReset {
+    width: 80px;
+    height: 35px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.btnForm:hover {
+    background-color: #42C6FA;
+    border: 2px solid #ffffff;
+    transition: 1s;
+}
+
+.btnFormReset:hover {
+    background-color: #42C6FA;
+    border: 2px solid #ffffff;
+    transition: 1s;
+}
+
+.mapsCt {
+    background-color: #000000;
+    margin-top: 1.4rem;
+}
+
+.borderMaps {
+    border: none;
+    outline: none;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* Desktop */
+@media screen and (min-width: 998px) {
+
+    /* Menu/Cabeçalho */
+    .top {
+        padding: 1.2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .wrap {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+    }
+
+    .imgLogotipo{
+        max-width: 140px;
+        margin: 2rem 0.6rem;
+    }
+
+    /* Banner */
+    .bannerPage {
+        padding: 2rem 1.4rem 4rem 1.4rem;
+    }
+
+    .colum1 {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .titleBanner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linkGitHub {
+        width: 100%;
+        max-width: 190px;
+        text-decoration: none;
+        font-size: 1.8rem;
+        background: linear-gradient(#42C6FA, #ffffff);
+        color: #000000;
+        font-family: Montserrat-Bold;
+        padding: 1rem;
+        border: 6px solid #0B8CBE;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+    }
+
+    .linkLinkedin {
+        width: 100%;
+        max-width: 190px;
+        text-decoration: none;
+        font-size: 1.8rem;
+        background: linear-gradient(#42C6FA, #ffffff);
+        color: #000000;
+        font-family: Montserrat-Bold;
+        padding: 1rem 2.4rem 1rem 1rem;
+        border: 6px solid #0B8CBE;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+    }
+
+    .linkGitHub:hover {
+        background: linear-gradient(#ffffff, #42C6FA);
+        border: 6px solid #ffffff;
+        transition: 1s;
+    }
+
+    .linkLinkedin:hover {
+        background: linear-gradient(#ffffff, #42C6FA);
+        border: 6px solid #ffffff;
+        transition: 1s;
+    }
+
+    .boxImgBanner {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgBanner {
+        max-width: 400px;
+        border-radius: 50%;
+        transition: .4s;
+    }
+
+    /* Portfólio */
+    .gridProjects {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .cardProjects {
+        width: 100%;
+        color: #000000;
+        background: linear-gradient(#0B8CBE, #ffffff);
+        border: 2px solid #ffffff;
+        border-radius: 4px;
+        cursor: default;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgCard {
+        width: 100%;
+        max-width: 310px;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        transition: .2s;
+    }
+
+    .repGitHub {
+        text-decoration: none;
+        font-size: 1rem;
+        background-color: #ffffff;
+        color: #000000;
+        border: 2px solid #42C6FA;
+        border-radius: 4px;
+        padding: 0.2rem 0.1rem;
+        margin: 1.2rem 2.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: 2s;
+    }
+    
+    .repGitHub:hover {
+        background-color: #42C6FA;
+        border: 2px solid #000000;
+        transition: 2s;
+    }
+
+    /* Contato */
+    .boxContact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .infoCt {
+        text-align: left;
+    }
+
+    /* Rodapé */
+    .iconRs {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+    
+    .linkRs {
+        text-decoration: none;
+    }
+    
+    .iconImg {
+        max-width: 40px;
+        transition: .4s;
+    }
+
+    .iconImg:hover{
+        transform: scale(1.4);
+    }
+    
+    .infoCopy {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1rem 0rem;
+        border-top: 1px #ffffff solid;
+        font-size: 0.8rem;
+    }
+    
+    .logoTipoCopy {
+        width: 100px;
+    }
+
+}
+
+/* ------------------------------------------------------------------------------- */
+/* Mobile */
+@media screen and (max-width: 998px) {
+
+    .menu-section nav {
+        display: none;
+    }
+
+    .one, .two, .three {
+        background-color: #0B8CBE;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    /*Fullscreen*/
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background: #ffffff;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on nav {
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+        background-color: #0B8CBE;
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+        background-color: #0B8CBE;
+    }
+
+    .menu-section.on nav ul {
+        text-align: center;
+        display: block;
+    }
+
+    .menu-section.on nav ul a {
+        transition-duration: 0.5s;
+        font-size: 0.8rem;
+        display: block;
+        color: #000000;
+        padding: 0.6rem;
+    }
+
+    header nav ul li a .FiLogOut {
+        width: 40px;
+    }
+
+    .menu-section.on nav ul .hide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem;
+        font-size: 1.6rem;
+    }
+
+    /* Menu/Cabeçalho */
+    .top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .imgLogotipo {
+        max-width: 140px;
+        margin: 2rem 0.6rem;
+    }
+
+    /* Banner */
+    .bannerPage {
+        padding-bottom: 4rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .colum1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titleBanner {
+        padding: 0px 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.4rem;
+    }
+
+    .btnPortfolio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linkGitHub {
+        width: 100%;
+        text-decoration: none;
+        font-size: 1.8rem;
+        background: linear-gradient(#42C6FA, #ffffff);
+        color: #000000;
+        font-family: Montserrat-Bold;
+        border: 6px solid #0B8CBE;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .linkLinkedin {
+        width: 100%;
+        text-decoration: none;
+        font-size: 1.8rem;
+        background: linear-gradient(#42C6FA, #ffffff);
+        color: #000000;
+        font-family: Montserrat-Bold;
+        border: 6px solid #0B8CBE;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .imgBanner {
+        max-width: 300px;
+        border-radius: 50%;
+        transition: .4s;
+    }
+
+    /* Portfólio */
+    .gridProjects {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .cardProjects {
+        width: 100%;
+        color: #000000;
+        background: linear-gradient(#0B8CBE, #ffffff);
+        border: 2px solid #ffffff;
+        border-radius: 4px;
+        cursor: default;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgCard {
+        width: 100%;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        transition: .2s;
+    }
+
+    .repGitHub {
+        max-width: 290px;
+        text-decoration: none;
+        font-size: 1rem;
+        background-color: #ffffff;
+        color: #000000;
+        border: 2px solid #42C6FA;
+        border-radius: 4px;
+        padding: 0.2rem 0.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: 2s;
+    }
+    
+    .repGitHub:hover {
+        background-color: #42C6FA;
+        border: 2px solid #000000;
+        transition: 2s;
+    }
+
+    /* Contato */
+    .contact {
+        padding-top: 2rem;
+    }
+    
+    .boxContact {
+        padding: 1rem;
+    }
+
+    .ulContact {
+        padding-left: 0px;
+    }
+
+    /* Rodapé */    
+    .linkRs {
+        text-decoration: none;
+    }
+    
+    .iconImg {
+        max-width: 40px;
+    }
+    
+    .infoCopy {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1rem 0rem;
+        border-top: 1px #ffffff solid;
+        font-size: 0.8rem;
+    }
+    
+    .logoTipoCopy {
+        width: 50px;
+    }
+
+}
+
+/* ------------------------------------------------------------------------------- */
+/* Outros */
+@media screen and (max-width: 630px) {
+
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-group {
+        display: block;
+    }
+    
+}
